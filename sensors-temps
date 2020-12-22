@@ -23,7 +23,7 @@
 # [root@HOME-CLOUD ~]# /usr/bin/sensors | /bin/grep '^Core 0:' | /bin/sed 's/^.*: *+\([0-9\.].*\)°C .*$/\1/'
 # 102.0
 
-/usr/bin/sensors | /bin/grep '^temp1:' | grep crit | /bin/sed 's/^.*: *+\([0-9\.].*\)°C.*(.*$/\1/'
+/usr/bin/sensors | /bin/grep '^temp1:'  | grep crit         | /bin/sed 's/^.*: *+\([0-9\.].*\)°C.*(.*$/\1/'
 /usr/bin/sensors | /bin/grep '^Core 0:' | /bin/sed 's/^.*: *+\([0-9\.].*\)°C .*$/\1/'
-/usr/bin/sensors | /bin/grep '^temp1:'  | /bin/grep -v crit | sed 's/.*+\([0-9\.].*\)°C/\1/g'
+/usr/bin/sensors | /bin/grep '^temp1:'  | /bin/grep -v crit | /bin/sed 's/.*+\([0-9\.].*\)°C/\1/g'
 
