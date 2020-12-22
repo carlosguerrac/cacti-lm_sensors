@@ -1,0 +1,17 @@
+[root@HOME-CLOUD snmp]# snmpwalk  -v 2c -c public 127.0.0.1  .1.3.6.1.4.1.8072.1.3.2
+NET-SNMP-EXTEND-MIB::nsExtendNumEntries.0 = INTEGER: 1
+NET-SNMP-EXTEND-MIB::nsExtendCommand."sensortemps" = STRING: /etc/snmp/sensors-temps
+NET-SNMP-EXTEND-MIB::nsExtendArgs."sensortemps" = STRING:
+NET-SNMP-EXTEND-MIB::nsExtendInput."sensortemps" = STRING:
+NET-SNMP-EXTEND-MIB::nsExtendCacheTime."sensortemps" = INTEGER: 5
+NET-SNMP-EXTEND-MIB::nsExtendExecType."sensortemps" = INTEGER: exec(1)
+NET-SNMP-EXTEND-MIB::nsExtendRunType."sensortemps" = INTEGER: run-on-read(1)
+NET-SNMP-EXTEND-MIB::nsExtendStorage."sensortemps" = INTEGER: permanent(4)
+NET-SNMP-EXTEND-MIB::nsExtendStatus."sensortemps" = INTEGER: active(1)
+NET-SNMP-EXTEND-MIB::nsExtendOutput1Line."sensortemps" = STRING: 27.8
+NET-SNMP-EXTEND-MIB::nsExtendOutputFull."sensortemps" = STRING: 27.8
+103.0
+NET-SNMP-EXTEND-MIB::nsExtendOutNumLines."sensortemps" = INTEGER: 2
+NET-SNMP-EXTEND-MIB::nsExtendResult."sensortemps" = INTEGER: 0
+NET-SNMP-EXTEND-MIB::nsExtendOutLine."sensortemps".1 = STRING: 27.8
+NET-SNMP-EXTEND-MIB::nsExtendOutLine."sensortemps".2 = STRING: 103.0
