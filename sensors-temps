@@ -25,3 +25,5 @@
 
 /usr/bin/sensors | /bin/grep '^temp1:' | grep crit | /bin/sed 's/^.*: *+\([0-9\.].*\)°C.*(.*$/\1/'
 /usr/bin/sensors | /bin/grep '^Core 0:' | /bin/sed 's/^.*: *+\([0-9\.].*\)°C .*$/\1/'
+/usr/bin/sensors | /bin/grep '^temp1:'  | /bin/grep -v crit | sed 's/.*+\([0-9\.].*\)°C/\1/g'
+
