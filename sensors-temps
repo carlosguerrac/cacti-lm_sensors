@@ -1,0 +1,23 @@
+
+# [root@HOME-CLOUD ~]# sensors
+# acpitz-virtual-0
+# Adapter: Virtual device
+# temp1:        +27.8°C  (crit = +110.0°C)
+# temp2:        +29.8°C  (crit = +110.0°C)
+# 
+# coretemp-isa-0000
+# Adapter: ISA adapter
+# Package id 0: +104.0°C  (high = +105.0°C, crit = +105.0°C)
+# Core 0:       +102.0°C  (high = +105.0°C, crit = +105.0°C)
+# Core 1:       +104.0°C  (high = +105.0°C, crit = +105.0°C)
+#
+# iwlwifi-virtual-0
+# Adapter: Virtual device
+# temp1:        +79.0°C
+
+[root@HOME-CLOUD ~]# /usr/bin/sensors | /bin/grep '^temp1:' | grep crit | /bin/sed 's/^.*: *+\([0-9\.].*\)°C.*(.*$/\1/'
+27.8
+
+[root@HOME-CLOUD ~]# /usr/bin/sensors | /bin/grep '^Core 0:' | /bin/sed 's/^.*: *+\([0-9\.].*\)°C .*$/\1/'
+102.0
+
