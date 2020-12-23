@@ -1,6 +1,8 @@
 IMPORTANT:
  run command "sensors-detect" in order to detect all sensors https://wiki.archlinux.org/index.php/lm_sensors.
 
+REFERENCE:
+https://www.pitt-pladdy.com/blog/_20091031-160232_0000_LM_Sensors_stats_on_Cacti_via_SNMP_/
 
 [root@HOME-CLOUD snmp]# snmpwalk  -v 2c -c public 127.0.0.1  .1.3.6.1.4.1.8072.1.3.2
 NET-SNMP-EXTEND-MIB::nsExtendNumEntries.0 = INTEGER: 1
